@@ -10,6 +10,12 @@ import Foundation
 
 class Aviatrix {
     
+    var authorName = " "
+    init(author : String) {
+        authorName =  author
+    }
+    
+    
     func start() -> Bool {
         return true
     }
@@ -30,3 +36,11 @@ class Aviatrix {
        return ["St. Louis"]
     }
 }
+
+var running = false
+func start () -> Bool {
+    running = true
+    return running
+}
+
+var newAviatrix = Aviatrix(auhtor : "Syd & Kayle")
